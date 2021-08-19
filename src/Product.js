@@ -16,7 +16,7 @@ function Product() {
       <h1 className="h3 mb-2 text-gray-800">product</h1>
       <Link
         to="/creat-product"
-        className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm margin"
+        className="btn btn-sm btn-primary shadow-sm margin"
       >
         <i className="fas fa-download fa-sm text-white-50"></i>Creat Poroduct
       </Link>
