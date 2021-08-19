@@ -18,7 +18,7 @@ function Product() {
         to="/creat-product"
         className="btn btn-sm btn-primary shadow-sm margin"
       >
-        <i className="fas fa-download fa-sm text-white-50"></i>Creat Poroduct
+        <i className="fas fa-download fa-sm text-white-50"></i>{" "}Creat Poroduct
       </Link>
       <div className="card shadow mb-4">
         <div className="card-header py-3">

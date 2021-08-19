@@ -18,7 +18,7 @@ function Users() {
         to="/creat-user"
         className="btn btn-sm btn-primary shadow-sm margin"
       >
-        <i className="fas fa-download fa-sm text-white-50"></i>Creat users
+        <i className="fas fa-download fa-sm text-white-50"></i>{" "}Creat users
       </Link>
       <div className="card shadow mb-4">
         <div className="card-header py-3">
