@@ -1,9 +1,9 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import productContext from "./Productcontext";
 function Product() {
-  const ProductContext=useContext(productContext);
- 
+  const ProductContext = useContext(productContext);
+
   let handleDelete = (id) => {
     let confirm = window.confirm("Are you want to delete data");
     if (confirm) {
@@ -26,46 +26,50 @@ function Product() {
         </div>
         <div className="card-body">
           <div className="table-responsive">
-          {
+            {
               <table
-              className="table table-bordered"
-              id="dataTable"
-              width="100%"
-              cellSpacing="0"
-            >
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                {
-               ProductContext.prodList.map((obj,index) => {
-                  return (
-                    <tr>
-                      <td>{index+1}</td>
-                      <td>{obj.productName}</td>
-                      <td>{obj.price}</td>
-                      <td>
-                        <Link
-                          to={`/edit/product/${index+1}`}
-                          className="btn btn-sm btn-primary small-margin"
-                        >
-                          Edit
-                        </Link>
-                        <button className="btn btn-sm btn-danger small-margin" onClick={()=>{handleDelete(index+1)}}>
-                          Remove
-                        </button>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          }
+                className="table table-bordered"
+                id="dataTable"
+                width="100%"
+                cellSpacing="0"
+              >
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {ProductContext.prodList.map((obj, index) => {
+                    return (
+                      <tr>
+                        <td>{index + 1}</td>
+                        <td>{obj.productName}</td>
+                        <td>{obj.price}</td>
+                        <td>
+                          <Link
+                            to={`/edit/product/${index + 1}`}
+                            className="btn btn-sm btn-primary small-margin"
+                          >
+                            Edit
+                          </Link>
+                          <button
+                            className="btn btn-sm btn-danger small-margin"
+                            onClick={() => {
+                              handleDelete(index + 1);
+                            }}
+                          >
+                            Remove
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            }
           </div>
         </div>
       </div>

@@ -22,9 +22,7 @@ function Users() {
       </Link>
       <div className="card shadow mb-4">
         <div className="card-header py-3">
-          <h6 className="m-0 font-weight-bold text-primary">
-            User List
-          </h6>
+          <h6 className="m-0 font-weight-bold text-primary">User List</h6>
         </div>
         <div className="card-body">
           <div className="table-responsive">
@@ -47,8 +45,7 @@ function Users() {
                 </tr>
               </thead>
               <tbody>
-                {
-                userContext.userList.map((obj, index) => {
+                {userContext.userList.map((obj, index) => {
                   return (
                     <tr>
                       <td>{index + 1}</td>

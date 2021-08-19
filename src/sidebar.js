@@ -33,24 +33,17 @@ function Sidebar() {
       <div className="sidebar-heading">Interface</div>
 
       <li className="nav-item">
-        <Link
-          className="nav-link"
-          to="/user"
-        >
+        <Link className="nav-link" to="/user">
           <i className="fas fa-fw fa-cog"></i>
           <span>Users</span>
         </Link>
       </li>
 
       <li className="nav-item">
-        <Link
-          className="nav-link collapsed"
-          to="/product"
-        >
+        <Link className="nav-link collapsed" to="/product">
           <i className="fas fa-fw fa-wrench"></i>
           <span>Products</span>
         </Link>
-        
       </li>
     </ul>
   );

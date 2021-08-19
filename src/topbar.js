@@ -121,7 +121,10 @@ export class Topbar extends PureComponent {
                   account.
                 </div>
               </div>
-              <div className="dropdown-item text-center small text-gray-500" href="#">
+              <div
+                className="dropdown-item text-center small text-gray-500"
+                href="#"
+              >
                 Show All Alerts
               </div>
             </div>
@@ -213,10 +216,15 @@ export class Topbar extends PureComponent {
                     that people say this to all dogs, even if they aren't
                     good...
                   </div>
-                  <div className="small text-gray-500">Chicken the Dog · 2w</div>
+                  <div className="small text-gray-500">
+                    Chicken the Dog · 2w
+                  </div>
                 </div>
               </div>
-              <div className="dropdown-item text-center small text-gray-500" href="#">
+              <div
+                className="dropdown-item text-center small text-gray-500"
+                href="#"
+              >
                 Read More Messages
               </div>
             </div>
