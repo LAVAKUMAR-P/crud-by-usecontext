@@ -7,11 +7,10 @@ function Createproduct() {
   const history = useHistory();
   const [productName, setUserName] = useState("");
   const [price, setPrice] = useState("");
- 
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    let userData = { productName, price};
+    let userData = { productName, price };
     ProductContext.setProdList([...ProductContext.prodList, userData]);
     history.push("/product");
   };
